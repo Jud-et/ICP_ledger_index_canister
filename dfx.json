@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "IcpLeger_backend": {
+      "main": "src/IcpLeger_backend/main.mo",
+      "type": "motoko"
+    },
+    "IcpLeger_frontend": {
+      "dependencies": [
+        "IcpLeger_backend"
+      ],
+      "source": [
+        "src/IcpLeger_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "IcpLeger_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
